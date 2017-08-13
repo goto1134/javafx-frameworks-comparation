@@ -13,7 +13,7 @@ import javax.inject.Inject
  * Created by Andrew
  * on 13.08.2017.
  */
-class AfterburnerPresenter() : Initializable {
+class AfterburnerPresenter : Initializable {
     override fun initialize(location: URL?, resources: ResourceBundle?) {
         sayHelloButton.setOnAction { helloLabel.text = service.getHelloStringForUser(User(nameTextField.text, surnameTextField.text)) }
     }
