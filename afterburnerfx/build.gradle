@@ -1,0 +1,10 @@
+group 'com.github.goto1134'
+version '1.0-SNAPSHOT'
+
+dependencies {
+    compile 'com.airhacks:afterburner.fx:1.6.0'
+    compile project(':core')
+}
+
+sourceSets.main.resources.srcDirs("src/main/kotlin").includes.addAll(["**/*.fxml", "**/*.css", "**/*.properties"])
+sourceSets.main.resources.srcDirs("src/main/resources").includes.addAll(["**/*.*"])
