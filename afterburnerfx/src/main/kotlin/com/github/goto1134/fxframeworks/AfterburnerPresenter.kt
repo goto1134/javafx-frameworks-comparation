@@ -15,11 +15,11 @@ import javax.inject.Inject
  */
 class AfterburnerPresenter : Initializable {
     override fun initialize(location: URL?, resources: ResourceBundle?) {
-        sayHelloButton.setOnAction { helloLabel.text = service.getHelloStringForUser(User(nameTextField.text, surnameTextField.text)) }
+        sayHelloButton.setOnAction { helloLabel.text = helloUserServiceImpl.getHelloStringForUser(User(nameTextField.text, surnameTextField.text)) }
     }
 
 
-    @Inject lateinit var service: HelloUserServiceImpl
+    @Inject lateinit var helloUserServiceImpl: HelloUserServiceImpl
     @FXML lateinit var nameTextField: TextField
     @FXML lateinit var surnameTextField: TextField
     @FXML lateinit var helloLabel: Label
