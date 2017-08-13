@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.AnchorPane?>
+<AnchorPane prefHeight="154.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.121"
+            xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.github.goto1134.fxframeworks.AfterburnerPresenter">
+    <children>
+        <Label layoutX="39.0" layoutY="37.0" text="Name"/>
+        <Label layoutX="39.0" layoutY="71.0" text="Surename"/>
+        <TextField fx:id="nameTextField" layoutX="121.0" layoutY="33.0"/>
+        <TextField fx:id="surnameTextField" layoutX="121.0" layoutY="67.0"/>
+        <Label fx:id="helloLabel" layoutX="37.0" layoutY="116.0" prefHeight="17.0" prefWidth="526.0"/>
+        <Button fx:id="sayHelloButton" layoutX="342.0" layoutY="46.0" mnemonicParsing="false" text="Say Hello"/>
+    </children>
+</AnchorPane>
