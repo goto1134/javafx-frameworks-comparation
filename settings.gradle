@@ -1,4 +1,5 @@
 rootProject.name = 'javafx-frameworks-comparation'
 include 'afterburnerfx'
 include 'core'
+include 'jacpfx'
 
