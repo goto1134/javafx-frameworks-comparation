@@ -19,7 +19,7 @@ class AfterburnerPresenter : Initializable {
     }
 
 
-    @Inject lateinit var helloUserServiceImpl: HelloUserServiceImpl
+    @Inject lateinit var helloUserServiceImpl: HelloUserService
     @FXML lateinit var nameTextField: TextField
     @FXML lateinit var surnameTextField: TextField
     @FXML lateinit var helloLabel: Label
